@@ -35,16 +35,17 @@ jobs:
           str-to-replace: "RepoName"
           replace-to-str: ${{ steps.get-repo-name.outputs.reponame }}
 
-      - name: remove-App
+      - name: remove
         working-directory: ${{ github.workspace }}
         shell: pwsh
         run: |
           Remove-Item App.json
+          Remove-Item .github/workflows/Init.yml
 
       - name: git-push
         uses: gendloop/git-push@main
         with:
           token: ${{ github.token }}
-          commit: "chore: Remove App.json"
+          commit: "chore: Remove App.json and Init.yml"
 
       
