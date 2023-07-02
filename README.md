@@ -2,5 +2,5 @@
 
 ## Install
 
-`scoop install gendloopBucket\RepoName` 
+`scoop install gendloopBucket/RepoName` 
 
