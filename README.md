@@ -1,1 +1,6 @@
-# template-gendloopApp
+# RepoName
+
+## Install
+
+`scoop install gendloopBucket\RepoName` 
+
