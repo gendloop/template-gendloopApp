@@ -2,5 +2,7 @@
 
 ## Install
 
-`scoop install gendloopBucket/RepoName` 
+```powershell
+scoop install gendloopBucket/RepoName
+```
 
