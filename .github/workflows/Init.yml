@@ -5,10 +5,13 @@ permissions:
   actions: write
 
 on: 
-  workflow_dispatch:
+  push:
+    branches:
+      - main
     
 jobs:
   init:
+    if: github.repository != 'gendloop/template-gendloopApp'
     runs-on: ubuntu-latest
     steps:
       - name: get-repo-name
